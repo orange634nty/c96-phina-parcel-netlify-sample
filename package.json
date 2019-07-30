@@ -1,0 +1,11 @@
+{
+  "name": "mantera-studio-tech-parcel-phina-sample",
+  "version": "1.0.0",
+  "description": "phina.js and parcel sample project for mantera studio tech book",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "orange634nty",
+  "license": "MIT"
+}
