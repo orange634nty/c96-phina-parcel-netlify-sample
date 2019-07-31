@@ -1,25 +1,13 @@
-// phina.jsを有効化 <--- (1)
 import 'phina.js'
+import MainScene from './MainScene'
+import CounterButton from './CounterButton'
+
 phina.globalize()
 
-// メインシーン定義 <--- (2)
-phina.define('MainScene', {
-    superClass: 'DisplayScene',
-    init() {
-        this.superInit()
-        // 背景色指定
-        this.backgroundColor = 'gray'
-        // ラベル作成・表示
-        this.label = Label({
-            text: 'Hello World',
-            fill: 'white',
-            x: this.gridX.center(),
-            y: this.gridY.center()
-        }).addChildTo(this)
-    }
-})
+// 登録
+phina.define('MainScene', MainScene)
+phina.define('CounterButton', CounterButton)
 
-// アプリ実行 <--- (3)
 phina.main(() => {
     const app = GameApp({
         startLabel: 'main'
